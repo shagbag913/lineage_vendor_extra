@@ -14,13 +14,12 @@
 # limitations under the License.
 #
 
-include vendor/extra/fonts.mk
-include vendor/extra/audio.mk
+LOCAL_PATH:= $(call my-dir)
 
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/extra/overlay
-
-PRODUCT_PACKAGES += \
-    FontArbutusSourceOverlay \
-    FontLatoZillaOverlay \
-    FontRubikRubikOverlay
+include $(CLEAR_VARS)
+LOCAL_PACKAGE_NAME := FontLatoZillaOverlay
+LOCAL_RRO_THEME := FontLatoZillaOverlay
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
+LOCAL_PRODUCT_MODULE := true
+LOCAL_SDK_VERSION := current
+include $(BUILD_RRO_PACKAGE)
