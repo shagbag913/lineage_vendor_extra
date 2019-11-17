@@ -15,6 +15,7 @@
 #
 
 include vendor/extra/fonts.mk
+include vendor/extra/audio.mk
 
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/extra/overlay
