@@ -28,6 +28,13 @@ PRODUCT_COPY_FILES += \
     vendor/extra/prebuilt/fonts/GoogleSans-Italic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-Italic.ttf \
     vendor/extra/prebuilt/fonts/GoogleSans-BoldItalic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-BoldItalic.ttf
 
+# San Francisco Pro
+PRODUCT_COPY_FILES += \
+    vendor/extra/prebuilt/fonts/SFProDisplay-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/SFProDisplay-Regular.ttf \
+    vendor/extra/prebuilt/fonts/SFProDisplay-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/SFProDisplay-Medium.ttf \
+    vendor/extra/prebuilt/fonts/SFProText-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/SFProText-Regular.ttf \
+    vendor/extra/prebuilt/fonts/SFProText-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/SFProText-Medium.ttf
+
 # Font configuration
 PRODUCT_COPY_FILES += \
     vendor/extra/prebuilt/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
